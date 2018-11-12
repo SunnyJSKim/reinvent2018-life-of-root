@@ -75,8 +75,8 @@ CREATE TABLE tb_object
 (
   object_id INT NOT NULL,
   object_name VARCHAR(100) NOT NULL,
-  object_score INT,
-  difficulty INT,
+  object_score INT,  // 50:테스트게임, 100:라이브게임
+  difficulty INT,   //1:테스트게임, 2:라이브게임
   log_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY(object_id)
 ) DEFAULT CHARSET=utf8;
